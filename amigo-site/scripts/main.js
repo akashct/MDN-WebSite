@@ -5,16 +5,18 @@ myHeading.textContent = 'Hello world!';
 }*/
 
 var myImage = document.querySelector("img");
+var heading3 = document.querySelector("h3");
 
 myImage.onclick = function() {
     var mysrc = myImage.getAttribute("src");
     if(mysrc === "images/firefox-icon.png") {
         myImage.setAttribute("src","images/firefox2.png");
+        heading3.textContent = "Wohhhh, you have clicked it. Now click again !!!!";
     } else {
         myImage.setAttribute("src","images/firefox-icon.png");
+        heading3.textContent = "Don't click on the picture :p";
     }
 }
-
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 function setUserName() {
